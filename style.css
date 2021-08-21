@@ -39,16 +39,3 @@ canvas
            }
 }
 
-@keyframes shakedBtn 
-{
-           0% 
-           {
-             transition: transform(0.2s);
-             transform: rotate(1deg);
-           }
-           10%
-           {
-                      transition: transform(0.2s);
-                      transform: rotate(10deg);   
-           }
-}
