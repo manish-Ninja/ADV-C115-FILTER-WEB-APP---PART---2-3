@@ -1,0 +1,54 @@
+body 
+{
+           background-color: #CCC;
+}
+h3 
+{
+           font-size: 25px !important;
+}
+.btn-success:hover 
+{
+           background-color: red;
+}
+.btn-success:focus
+{
+          border: 5px 5px 5px rgb(0, 255, 98) !important;
+}
+canvas 
+{
+           animation-name: rgbBackDropAnimation;
+           animation-duration: 4s;
+           animation-iteration-count: infinite;
+}
+
+#takeUrSelfie 
+{
+           animation-name:shakedBtn;
+           animation-duration: 1s;
+           animation-iteration-count: infinite;
+}
+@keyframes rgbBackDropAnimation 
+{
+           from
+           {
+              box-shadow: 5px 5px 10px purple;
+           }
+           to
+           {
+               box-shadow: 5px 5px 10px rgb(119, 119, 231);
+           }
+}
+
+@keyframes shakedBtn 
+{
+           0% 
+           {
+             transition: transform(0.2s);
+             transform: rotate(1deg);
+           }
+           10%
+           {
+                      transition: transform(0.2s);
+                      transform: rotate(10deg);   
+           }
+}
